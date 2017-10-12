@@ -10,12 +10,12 @@ infilea = open('kluizen.txt','a')
 keuzenummer = eval(input('Geef uw optienummer: '))
 
 def toon_aantal_kluizen_vrij():
-    'Shows the empty lockers'
+    'Laat de lege kluizen zien'
     kluizen = infiler.readlines()
     print('Er zijn ',12-len(kluizen),' kluizen beschikbaar.')
 
 def nieuwe_kluizen():
-    'Checks for empty lockers and lets you get a locker'
+    'Kijkt of er lege kluizen zijn'
     kluisnummers = [1,2,3,4,5,6,7,8,9,10,11,12]
     kluizen = infiler.readlines()
     open_kluizen = []
@@ -40,7 +40,7 @@ def nieuwe_kluizen():
 
 
 def kluis_openen():
-    'This allows the user to open his locker'
+    'Zorgt ervoor dat je de kluis kan openen'
     kluizen = infiler.readlines()
     kluisnummer = input('Geef uw kluisnummer: ')
     kluiswachtwoord = input('Geef uw wachtwoord: ')
@@ -51,7 +51,7 @@ def kluis_openen():
     else: print('Kluisnummer en wachtwoord combinatie niet gevonden.')
 
 def kluis_teruggeven():
-    'This allows the user to return his locker and deletes it from the back-up'
+    'Dit laat de persoon zijn kluis terugbrengen en wordt verijderd uit de back-up'
     kluizen = infiler.readlines()
     kluisnummer = input('Geef uw kluisnummer: ')
     kluiswachtwoord = input('Geef uw wachtwoord: ')

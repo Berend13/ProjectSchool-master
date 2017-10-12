@@ -8,7 +8,6 @@ while True:
     if inputnaam not in dict:
         dict[inputnaam] = 0
     dict[inputnaam] += 1
-
 for key, value in dict.items() :
     if value == 1:
         print('er is',value,'student met de naam',key)
