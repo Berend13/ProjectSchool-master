@@ -78,4 +78,4 @@ if keuzenummer == 4:
     kluis_teruggeven()
 
 infiler.close()
-infilea.close
+infilea.close()

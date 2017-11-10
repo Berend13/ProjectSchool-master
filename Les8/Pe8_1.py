@@ -1,7 +1,13 @@
-beide = {"Best", "Beukenlaan"}
-bruin = {"Helmond 't Hout", "Helmond","Helmond Brouwhuis", "Deurne"}
-groen = {"Geldrop", "Heeze", "Weert"}
-print('beide gaan door:',beide)
-print('Bruin gaat door',bruin,'en groen gaat door',groen)
-print(beide, groen, bruin)
-print(type(beide))
+bruin = ['Boxtel','Best','Breukenlaan','Eindhoven','Helmond \'t hout','Helmond','Helmond Brouwhuis','Deurne']
+groen = ['Boxtel','Best','Breukenlaan','Eindhoven','Geldrop','Heeze','Weert']
+bruin = set(bruin)
+groen = set(groen)
+
+print('Groen:',groen)
+print('Bruin:',bruin)
+print('Overeenkomsten')
+print(bruin & groen,'\n')
+
+print('Verschillen')
+print('Wel in groen:',groen - bruin)
+print('Wel in bruin:',bruin - groen)
